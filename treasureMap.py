@@ -10,17 +10,19 @@ position = input("Where do you want to put the treasure? ")
 # Write your code below this row 👇
 
 output = []
+
 myStr = position
 print("The input string is:", myStr)
 for character in myStr:
     output.append(character)
 print("The output is:", output)
 
-position1 = int(output[0])
+output1 = output[0]
+output2 = output[1]
 
-print(type(output[0]))
 
-map.insert(position, output[0])
+row1[output1-1] = output[0]
+
 
 # Write your code above this row 👆
 
