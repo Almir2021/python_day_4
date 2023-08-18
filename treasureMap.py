@@ -17,13 +17,15 @@ for character in myStr:
     output.append(character)
 print("The output is:", output)
 
-output1 = output[0]
-output2 = output[1]
+output1 = int(output[0])
+output2 = int(output[1])
 
-
-row1[output1-1] = output[0]
-
-
+if output1 == 1:
+    row1[output1-1] = output[0]
+elif output1 == 2:
+    row2[output1-1] = output[0]
+elif output1 == 3:
+    row3[output1-1] = output[0]
 # Write your code above this row 👆
 
 # 🚨 Don't change the code below 👇
