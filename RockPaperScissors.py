@@ -42,7 +42,6 @@ elif choice == "S":
     print(scissors)
     myChoice = 2
 
-print(myChoice)
 
 print("Computer chose:")
 
@@ -52,28 +51,28 @@ randomInt = random.randint(0, 2)
 print(computerChoice[randomInt])
 
 computerChosen = randomInt
-print(computerChosen)
+
 
 if myChoice == 0:
     if myChoice == computerChosen:
         print("It's draw")
-    elif myChoice == 1 and con:
+    elif computerChosen == 1:
         print("You loose ")
-    elif myChoice == 2:
+    elif computerChosen == 2:
         print("You won")
 
 if myChoice == 1:
     if myChoice == computerChosen:
         print("It's draw")
-    elif myChoice == 2:
+    elif computerChosen == 2:
         print("You loose ")
-    elif myChoice == 0:
+    elif computerChosen == 0:
         print("You won")
 
 if myChoice == 2:
     if myChoice == computerChosen:
         print("It's draw")
-    elif myChoice == 2:
+    elif computerChosen == 0:
         print("You loose ")
-    elif myChoice == 1:
+    elif computerChosen == 1:
         print("You won")
